@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://hmantas.github.io/Results-summary-component/)
 
 ## My process
 
