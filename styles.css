@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container-wrap {
+    background: white;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+
+    padding: 20px 60px 40px 60px;
+    z-index: 10;
+}
+
+.result-container_heading {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.result-container_score {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 24px 0;
+}
+
+.result-container_score h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.result-container_score p {
+    font-size: 14px;
+    color: hsl(241, 100%, 89%, 60%);
+    font-weight: 600;
+}
+
+.result-container_answer {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.result-container_text {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.summary-container {
+    padding: 23px 30px 30px 30px;
+}
+
+.summary {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+}
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.summary-list_item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    padding: 18px;
+}
+
+.summary-list_item-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.summary-list_item-left p {
+    /* color: hsl(0, 100%, 67%); */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.red-text { color:hsl(0, 100%, 67%);}
+
+.orange-text {color:hsl(39, 100%, 56%);}
+
+.green-text {color: hsl(166, 100%, 37%);}
+
+.blue-text {color: hsl(234, 85%, 45%);}
+
+.bg-red { background:hsl(0, 100%, 67%, 10%);}
+
+.bg-orange {background:hsl(39, 100%, 56%, 10%);}
+
+.bg-green {background: hsl(166, 100%, 37%, 10%);}
+
+.bg-blue {background: hsl(234, 85%, 45%, 10%);}
+
+.summary-list_item-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: 700;
+    color: hsl(224, 30%, 27%, 50%);
+}
+
+.score {
+    color: hsl(224, 30%, 27%);
+}
+
+.btn {
+    background: hsl(224, 30%, 27%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 760px) {
+    main {
+        position: relative;
+        height: 100vh;
+    }
+    .container-wrap {
+        display: flex;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+    }
+
+    .result-container {
+        border-radius: 30px;
+        width: 370px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .result-container_score {
+        width: 190px;
+        height: 190px;
+    }
+
+    .result-container_heading {
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .result-container_score h1 {
+        font-size: 67px;
+    }
+
+    .result-container_score p {
+        font-size: 16px;
+    }
+
+    .result-container_answer {
+        font-size: 30px;
+    }
+
+    .result-container_text {
+        color: hsl(241, 100%, 89%);
+        font-size: 18px;
+    }
+
+    .summary {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .summary-container {
+        padding-top: 40px;
+    }
+
+    .summary-list_item {
+        width: 300px;
+        
+    }
+
+    .btn {
+        margin-top: 23px;
+    }
+
+    .result-container {
+        z-index: 10;
+        box-shadow: 0px 20px 20px hsl(241, 100%, 89%);
+    }
+    .summary-container {
+        background: #fff;
+        box-shadow: 20px 20px 20px hsl(241, 100%, 89%);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-left: -30px;
+        padding-left: 60px;
+    }
+}

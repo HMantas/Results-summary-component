@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+ 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="container-wrap">
+      <div class="result-container">
+        <p class="result-container_heading">Your Result</p>
+        <div class="result-container_score">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h3 class="result-container_answer">Great</h3>
+        <p class="result-container_text">You scored higher than 65% of the people who have taken these tests</p>
+      </div>
+      <div class="summary-container">
+        <h3 class="summary">Summary</h3>
+        <div class="summary-list">
+          <div class="summary-list_item bg-red">
+            <div class="summary-list_item-left">
+              <img src="./assets/images/icon-reaction.svg" alt="icon">
+              <p class="red-text">Reaction</p>
+            </div>
+            <div class="summary-list_item-right">
+              <p class="score">80</p>
+              <span>/</span>
+              <p class="maximum">100</p>
+            </div>
+          </div>
+          <div class="summary-list_item bg-orange">
+            <div class="summary-list_item-left">
+              <img src="./assets/images/icon-memory.svg" alt="icon">
+              <p class="orange-text">Memory</p>
+            </div>
+            <div class="summary-list_item-right">
+              <p class="score">80</p>
+              <span>/</span>
+              <p class="maximum">100</p>
+            </div>
+          </div>
+          <div class="summary-list_item bg-green">
+            <div class="summary-list_item-left">
+              <img src="./assets/images/icon-verbal.svg" alt="icon">
+              <p class="green-text">Verbal</p>
+            </div>
+            <div class="summary-list_item-right">
+              <p class="score">80</p>
+              <span>/</span>
+              <p class="maximum">100</p>
+            </div>
+          </div>
+          <div class="summary-list_item bg-blue">
+            <div class="summary-list_item-left">
+              <img src="./assets/images/icon-visual.svg" alt="icon">
+              <p class="blue-text">Visual</p>
+            </div>
+            <div class="summary-list_item-right">
+              <p class="score">80</p>
+              <span>/</span>
+              <p class="maximum">100</p>
+            </div>
+          </div>
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://github.com/HMantas">Mantas Lileikis</a>.
+  </footer>
+</body>
+</html>
